@@ -1,4 +1,5 @@
-const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+// Localhost default: http://localhost:5000
+const BASE = process.env.NEXT_PUBLIC_API_URL || "https://naashyol-backend.onrender.com";
 
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
